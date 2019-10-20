@@ -2,10 +2,16 @@ import Vue from 'vue'
 import app from './app.vue'
 import VueRouter from 'vue-router'
 
+import axios from 'axios'
+//全局配置axios
+ Vue.prototype.$http=axios
+
 Vue.use(VueRouter);
 import router from'./router.js'
 import VueResource from 'vue-resource'
 Vue.use(VueResource);
+
+
 
 //import MintUI from 'mint-ui'
 //Vue.use(MintUI);
@@ -13,6 +19,8 @@ import { Header } from 'mint-ui';
 Vue.component(Header.name, Header);
 
 import { Swipe, SwipeItem } from 'mint-ui';
+//import './mock/index.js'
+
 
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
@@ -30,7 +38,7 @@ import { TabContainer, TabContainerItem } from 'mint-ui';
 Vue.component(TabContainer.name, TabContainer);
 Vue.component(TabContainerItem.name, TabContainerItem);*/
 
-console.log(document.getElementById("app"));
+//console.log(document.getElementById("app"));
 
 
 

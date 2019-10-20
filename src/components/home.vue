@@ -8,29 +8,30 @@
     </mt-swipe>
     <!--icon区域-->
     <div class="icon-container">
-        <div class="fa-items">
+        <router-link to="/home/newlsist" class="fa-items">
             <img src="../images/icon-sale.png">
             <span>拍卖</span>
-        </div>
-        <div class="fa-items">
+        </router-link>
+        <router-link to="" class="fa-items">
             <img src="../images/icon-classfity.png">
             <span>分类</span>
-        </div>
-        <div class="fa-items">
+        </router-link>
+        <router-link to="" class="fa-items">
             <img src="../images/icon-food.png">
             <span>小车车</span>
-        </div>
-        <div class="fa-items">
+        </router-link>
+        <router-link to="" class="fa-items">
             <img src="../images/icon-money.png">
             <span>聚划算</span>
-        </div><div class="fa-items">
+        </router-link>
+        <router-link to="" class="fa-items">
         <img src="../images/entrace.png">
         <span>进口</span>
-    </div>
-        <div class="fa-items">
+    </router-link>
+        <router-link to="" class="fa-items">
             <img src="../images/incon-topup.png">
             <span>充值</span>
-        </div>
+        </router-link>
 
 
 

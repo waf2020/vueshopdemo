@@ -1,8 +1,10 @@
 <template>
-    <div>
+    <div class="app-container">
     <!--顶部-->
     <div class="my-header"><mt-header fixed title="拍拍网"></mt-header></div>
-     <router-view></router-view>
+     <transition>
+        <router-view></router-view>
+        </transition>
     <!--底部-->
     <nav class="mui-bar mui-bar-tab">
         <router-link to="/home" class="mui-tab-item " href="#tabbar">
@@ -42,10 +44,30 @@
 </script>
 
 <style scoped>
+      .app-container{
+          overflow-x: hidden;
+      }
+
     .my-header{
         height: 40px;
     }
     .mt-header {
         padding-top: 20px !important;
     }
+
+    .v-enter
+     {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    .v-leave-to {
+        opacity: 0;
+        transform: translateX(-100%);
+        position: absolute;
+    }
+
+    .v-enter-active,
+    .v-leave-active{
+         transition: all 0.5s ease;
+    }    
 </style>
