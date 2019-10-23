@@ -4,22 +4,25 @@ import VueRouter from 'vue-router'
 
 import axios from 'axios'
 //全局配置axios
- Vue.prototype.$http=axios
+ Vue.prototype.$axios=axios;
 
 Vue.use(VueRouter);
 import router from'./router.js'
-import VueResource from 'vue-resource'
-Vue.use(VueResource);
+// import VueResource from 'vue-resource'
+// Vue.use(VueResource);
 
 
 
 //import MintUI from 'mint-ui'
 //Vue.use(MintUI);
-import { Header } from 'mint-ui';
+import { Header,Button } from 'mint-ui';
+//全局引入mint-uicss样式
+import "mint-ui/lib/style.css"
 Vue.component(Header.name, Header);
+Vue.component(Button.name,Button);
 
 import { Swipe, SwipeItem } from 'mint-ui';
-//import './mock/index.js'
+
 
 
 Vue.component(Swipe.name, Swipe);
@@ -28,15 +31,7 @@ import '../lib/mui/css/mui.css'
 import '../lib/mui/css/icons-extra.css'
 import '../lib/mui/fonts/mui.ttf'
 
-/*import { Tabbar, TabItem } from 'mint-ui';
 
-Vue.component(Tabbar.name, Tabbar);
-Vue.component(TabItem.name, TabItem);
-
-import { TabContainer, TabContainerItem } from 'mint-ui';
-
-Vue.component(TabContainer.name, TabContainer);
-Vue.component(TabContainerItem.name, TabContainerItem);*/
 
 //console.log(document.getElementById("app"));
 

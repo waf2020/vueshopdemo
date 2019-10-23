@@ -5,6 +5,7 @@ import  member from  './components/member.vue'
 import search from './components/search.vue'
 import shopcart from './components/shopcart.vue'
 import newslist from "./components/chiditems/newslist.vue";
+import newsinfo from './components/chiditems/news/newsinfo.vue'
 
 var router=new VueRouter({
     routes:[
@@ -14,6 +15,7 @@ var router=new VueRouter({
         {path:'/search',component:search},
         {path:'/shopcart',component:shopcart},
         {path:'/home/newlsist',component:newslist},
+        {path:'/home/newsinfo/:id',component:newsinfo}
 
     ],
     linkActiveClass:'mui-active'
